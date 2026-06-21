@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kod zelenega zmaja</title>
+        <style>
+            body {
+                background-color: #2a4c3a;
+                font-family: Arial;
+                color: #cccccc;
+            }
+            hr {
+                border: none;
+                height: 1px;
+                background: #a88534;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            button {
+                background: transparent;
+                border: none;
+                color: #cccccc;
+                font-size: 18px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+            button:hover {
+                color: #d4a843;
+            }
+            .button_symbol {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            .symbol {
+                height: 25px;
+                width: 25px;
+            }
+            .head {
+                background-color: #1a3c2a;
+            }
+            .head_row {
+                display: flex;
+                justify-content: space-between;
+            }
+            .main_title {
+                margin: 40px 70px 10px;
+                font-family: Georgia;
+                color: #f0f0f0;
+                letter-spacing: 3px;
+                font-size: clamp(32px, 3.5vw, 300px)
+            }
+            .button_symbol.login {
+                margin: 60px 80px 40px;
+                padding: 5px 5px;
+                font-size: 20px;
+            }
+            .head_description {
+                margin: 0px 70px 20px;
+                max-width: 1100px;
+                font-size: 17px;
+            }
+            .head_menu {
+                display: flex;
+                text-align: center;
+                margin: 10px 45px 10px;
+            }
+            .head_menu_search {
+                margin: 0px 20px;
+                font-size: 20px;
+            }
+            .menu_button {
+                margin: 6px 10px;
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+            .button_symbol.head_basket_button {
+                margin: 0px 70px;
+                padding: 10px 18px;
+                border-radius: 15px;
+                background: #ac8c41;
+                max-height: 50px;
+                font-size: 18px;
+            }
+            .button_symbol.head_basket_button:hover,
+            .page_card_button:hover {
+                background: #cc9c2c;
+                color: #494949;
+            }
+            .hidden_menu {
+                position: relative;
+                display: inline-block;
+            }
+            .hidden_content {
+                display: none;
+                position: absolute;
+                top: 35px;
+                left: 10px;
+                width: 170px;
+                padding: 8px 16px;
+                line-height: 35px;
+                border-radius: 3px;
+                background: #32714f;
+                opacity: 0.9;
+                z-index: 10;
+            }
+            .hidden_menu_button {
+                width: 170px;
+            }
+            .hidden_menu:hover .hidden_content {
+                display: block;
+            }
+            .page {
+                display: flex;
+                text-align: center;
+                margin: 30px 80px;
+                gap: 100px;
+            }
+            .page_recommended {
+                display: block;
+                text-align: left;
+            }
+            .page_recommended_title {
+                margin: 40px 0px 30px;
+            }
+            .page_card_carousel {
+                display: flex;
+                gap: 20px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                max-width: 620px;
+                height: 560px;
+            }
+            .page_card {
+                display: flex;
+                flex-direction: column;
+                min-width: 300px;
+                background: #1a3c2a;
+                text-align: left;
+                scroll-snap-align: center;
+                border-radius: 20px;
+            }
+            .page_card_row {
+                display: flex;
+                justify-content: space-between;
+                margin: auto 0px 20px;
+            }
+            .page_card_img {
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            .page_card_text {
+                margin: 0px 15px 0px;
+            }
+            .page_card_price {
+                margin: 6px 20px;
+                font-size: 20px;
+            }
+            .page_card_button {
+                margin: 0px 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                background: #ac8c41;
+                font-size: 16px;
+                width: 120px;
+                height: 35px;
+            }
+            .page_img {
+                height: 700px;
+                width: auto;
+                border-radius: 15px;
+            }
+            .basement {
+                background: #1a3c2a;
+                padding: 50px 100px;
+            }
+            .basement_menu {
+                display: flex;
+                text-align: center;
+                margin: 20px 10px 0px;
+            }
+            .basement_inf {
+                display: flex;
+                justify-content: space-between;
+            }
+            .basement_data {
+                margin: 45px 0px 0px;
+            }
+            .basement_contact {
+                margin: 0px 0px 0px;
+            }
+            .basement_button_copyright {
+                margin: 0px 10px;
+                padding: 0px 10px;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "head">
+            <div class = "head_row">
+                <h1 class = "main_title">Kod zelenega zmaja</h1>
+                <button class = "button_symbol login"><img class = "symbol" src = "https://i.pinimg.com/originals/5e/39/6b/5e396bb1b17681759922dd10f8a9d702.png">Войти</button>
+            </div>
+            <div class = "head_row">
+                <p class = "head_description">Спрятанная от шумных улиц, наша кофейня пахнет свежей выпечкой и зерновым кофе. Здесь можно укутаться в плед, наблюдать за дождём за окном и чувствовать себя в безопасности. «У зелёного дракона» рады каждому, кто ищет тишины и искреннего уюта!</p>
+            </div>
+            <hr>
+            <div class = "head_row">
+                <div class = "head_menu">
+                    <div class = "hidden_menu">
+                        <button class = "head_menu_search">🔍︎</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Выпечка</button>
+                            <button class = "hidden_menu_button">Десерты</button>
+                            <button class = "hidden_menu_button">Горячие напитки</button>
+                            <button class = "hidden_menu_button">Холодные напитки</button>
+                            <button class = "hidden_menu_button">Дополнительно</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Выпечка</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Круассаны</button>
+                            <button class = "hidden_menu_button">Булочки с корицей</button>
+                            <button class = "hidden_menu_button">Бриоши</button>
+                            <button class = "hidden_menu_button">Слойки</button>
+                            <button class = "hidden_menu_button">Печенье</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Десерты</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Тирамису</button>
+                            <button class = "hidden_menu_button">Чизкейк</button>
+                            <button class = "hidden_menu_button">Брауни</button>
+                            <button class = "hidden_menu_button">Панна-котта</button>
+                            <button class = "hidden_menu_button">Маффины</button>
+                            <button class = "hidden_menu_button">Медовик</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Горячие напитки</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Зерновой кофе</button>
+                            <button class = "hidden_menu_button">Эспрессо</button>
+                            <button class = "hidden_menu_button">Капучино</button>
+                            <button class = "hidden_menu_button">Латте</button>
+                            <button class = "hidden_menu_button">Какао</button>
+                            <button class = "hidden_menu_button">Чаи</button>
+                            <button class = "hidden_menu_button">Травяные сборы</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Холодные напитки</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Айс-латте</button>
+                            <button class = "hidden_menu_button">Колд брю</button>
+                            <button class = "hidden_menu_button">Лимонады</button>
+                            <button class = "hidden_menu_button">Смузи</button>
+                            <button class = "hidden_menu_button">Молочные коктейли</button>
+                            <button class = "hidden_menu_button">Фраппе</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Дополнительно</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Сезонное меню</button>
+                            <button class = "hidden_menu_button">Блюдо дня</button>
+                            <button class = "hidden_menu_button">Растительное молоко</button>
+                            <button class = "hidden_menu_button">Вода</button>
+                        </div>
+                    </div>
+                </div>
+                <button class = "button_symbol head_basket_button"><img class = "symbol" src = "https://images.icon-icons.com/1796/PNG/512/shoppingbasket2_114884.png">|&emsp;0 ₽</button>
+            </div>
+        </div>
+        <div class = "page">
+            <div class = "page_recommended">
+                <h2 class = "page_recommended_title">Рекомендуемые товары</h2>
+                <div class = "page_card_carousel">
+                    <div class = "page_card">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/originals/c6/69/64/c6696472a77cc9466c4386810a9d5a0a.jpg">
+                        <div class = "page_card_text"><h3>Эспрессо классический</h3><p>Насыщенный, бархатистый эспрессо с плотной пенкой крема золотисто-орехового оттенка. Глубокий, сбалансированный вкус с нотками темного шоколада и ореховой карамели.</p></div>
+                        <div class = "page_card_row">
+                            <div class = "page_card_price">200 ₽</div>
+                            <button class = "page_card_button">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card">
+                        <img class = "page_card_img" src = "https://img.magnific.com/photos-gratuite/croissant-au-beurre-table_1339-4101.jpg?size=626&ext=jpg">
+                        <div class = "page_card_text"><h3>Круассан ванильный</h3><p>Воздушный, слоеный круассан из дрожжевого теста с хрустящей карамельной корочкой. Внутри — нежный, маслянистый мякиш с легким ванильным ароматом.</p></div>
+                        <div class = "page_card_row">
+                            <div class = "page_card_price">120 ₽</div>
+                            <button class = "page_card_button">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/originals/c3/37/dc/c337dcd56365830f9ba43a19670daf45.jpg?nii=t">
+                        <div class = "page_card_text"><h3>Растительное молоко</h3><p>Лёгкий, нежный напиток с мягким вкусом и тонкой сладковатой ноткой. Кремовая текстура и приятный орехово-злаковый оттенок делают его идеальным дополнением к завтраку.</p></div>
+                        <div class = "page_card_row">
+                            <div class = "page_card_price">100 ₽</div>
+                            <button class = "page_card_button">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card">
+                        <img class = "page_card_img" src = "https://avatars.mds.yandex.net/i?id=e8a57dee9554b9c27d45f16ec6aee3cb_l-5698543-images-thumbs&n=13">
+                        <div class = "page_card_text"><h3>Чай травяной</h3><p>Ароматный, согревающий травяной чай с мягким, природным вкусом и тонким медово-цветочным оттенком. Янтарно-золотистый настой с легкой терпкостью и свежим послевкусием.</p></div>
+                        <div class = "page_card_row">
+                            <div class = "page_card_price">270 ₽</div>
+                            <button class = "page_card_button">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/b0/6b/05/b06b054df16f789d1a4f3f5aa3ee01f7.jpg">
+                        <div class = "page_card_text"><h3>Чизкейк шоколадный</h3><p>Нежный, шелковистый шоколадный чизкейк с бархатистой текстурой и насыщенным вкусом темного какао. На тонкой песочной основе с легким сливочным ароматом.</p></div>
+                        <div class = "page_card_row">
+                            <div class = "page_card_price">260 ₽</div>
+                            <button class = "page_card_button">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class = "page_img" src = "https://i.pinimg.com/736x/85/98/0a/85980aeaca5df0e6e686ae0b94cfa567.jpg">
+        </div>
+        <footer class = "basement">
+            <hr>
+            <div class = "basement_menu">
+                <button class = "menu_button">О нас</button>
+                <button class = "menu_button">Отзывы</button>
+                <button class = "menu_button">Контакты</button>
+                <button class = "menu_button">Вакансии</button>
+                <button class = "menu_button">Акции</button>
+            </div>
+            <div class = "basement_inf">
+                <div class = "basement_data">
+                    <p>Часы работы: с 7:00 до 22:00</p>
+                    <p>2026 © Кафе «Kod zelenga zmaja»<button class = "basement_button_copyright">Правовая информация</button></p>
+                </div>
+                <div class = "basement_contact">
+                    <p>✆ +386 00-000-000</p>
+                    <p>✉ contact.kodzelengazmaja.si</p>
+                    <p>🏠︎ 1500 г. Любляна, ул. Драконья, 4</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

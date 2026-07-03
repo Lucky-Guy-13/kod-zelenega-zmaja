@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kod zelenega zmaja</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "head">
+            <div class = "row_divider">
+                <h1 class = "main_title">Kod zelenega zmaja</h1>
+                <button class = "button_symbol login"><img class = "symbol" src = "https://i.pinimg.com/originals/5e/39/6b/5e396bb1b17681759922dd10f8a9d702.png">Войти</button>
+            </div>
+            <div class = "row_divider">
+                <p class = "head_description">Спрятанная от шумных улиц, наша кофейня пахнет свежей выпечкой и зерновым кофе. Здесь можно укутаться в плед, наблюдать за дождём за окном и чувствовать себя в безопасности. «У зелёного дракона» рады каждому, кто ищет тишины и искреннего уюта!</p>
+            </div>
+            <hr>
+            <div class = "row_divider">
+                <div class = "head_menu">
+                    <div class = "hidden_menu">
+                        <button class = "head_menu_search">🔍︎</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Выпечка</button>
+                            <button class = "hidden_menu_button">Десерты</button>
+                            <button class = "hidden_menu_button">Горячие напитки</button>
+                            <button class = "hidden_menu_button">Холодные напитки</button>
+                            <button class = "hidden_menu_button">Дополнительно</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Выпечка</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Круассаны</button>
+                            <button class = "hidden_menu_button">Булочки с корицей</button>
+                            <button class = "hidden_menu_button">Бриоши</button>
+                            <button class = "hidden_menu_button">Слойки</button>
+                            <button class = "hidden_menu_button">Печенье</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Десерты</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Тирамису</button>
+                            <button class = "hidden_menu_button">Чизкейк</button>
+                            <button class = "hidden_menu_button">Брауни</button>
+                            <button class = "hidden_menu_button">Панна-котта</button>
+                            <button class = "hidden_menu_button">Маффины</button>
+                            <button class = "hidden_menu_button">Медовик</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Горячие напитки</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Зерновой кофе</button>
+                            <button class = "hidden_menu_button">Эспрессо</button>
+                            <button class = "hidden_menu_button">Капучино</button>
+                            <button class = "hidden_menu_button">Латте</button>
+                            <button class = "hidden_menu_button">Какао</button>
+                            <button class = "hidden_menu_button">Чаи</button>
+                            <button class = "hidden_menu_button">Травяные сборы</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Холодные напитки</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Айс-латте</button>
+                            <button class = "hidden_menu_button">Колд брю</button>
+                            <button class = "hidden_menu_button">Лимонады</button>
+                            <button class = "hidden_menu_button">Смузи</button>
+                            <button class = "hidden_menu_button">Молочные коктейли</button>
+                            <button class = "hidden_menu_button">Фраппе</button>
+                        </div>
+                    </div>
+                    <div class = "hidden_menu">
+                        <button class = "menu_button">Дополнительно</button>
+                        <div class = "hidden_content">
+                            <button class = "hidden_menu_button">Сезонное меню</button>
+                            <button class = "hidden_menu_button">Блюдо дня</button>
+                            <button class = "hidden_menu_button">Растительное молоко</button>
+                            <button class = "hidden_menu_button">Вода</button>
+                        </div>
+                    </div>
+                </div>
+                <button class = "button_symbol head_basket_button"><img class = "symbol" src = "https://images.icon-icons.com/1796/PNG/512/shoppingbasket2_114884.png">|&emsp;0 ₽</button>
+            </div>
+        </div>
+        <div class = "page">
+            <div class = "page_recommended">
+                <h2 class = "page_recommended_title">Рекомендуемые товары</h2>
+                <div class = "page_card_carousel">
+                    <div class = "page_card" id = "card-0">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/98/90/1f/98901f1f5ccb858826b4fd27cd9cc187.jpg">
+                        <div class = "page_card_text"><h3>Эспрессо классический</h3><p>Насыщенный, бархатистый эспрессо с плотной пенкой крема золотисто-орехового оттенка. Глубокий, сбалансированный вкус с нотками темного шоколада и ореховой карамели.</p></div>
+                        <div class = "page_card_row" id = "row-0">
+                            <div class = "page_card_price">200 ₽</div>
+                            <button class = "page_card_basket_button" product-index = "0">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card" id = "card-1">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/94/65/11/946511396c473b4001bb9de28c02c28a.jpg">
+                        <div class = "page_card_text"><h3>Круассан ванильный</h3><p>Воздушный, слоеный круассан из дрожжевого теста с хрустящей карамельной корочкой. Внутри — нежный, маслянистый мякиш с легким ванильным ароматом.</p></div>
+                        <div class = "page_card_row" id = "row-1">
+                            <div class = "page_card_price">120 ₽</div>
+                            <button class = "page_card_basket_button" product-index = "1">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card" id = "card-2">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/85/af/8d/85af8d2a77961e4684a389c894f4be51.jpg">
+                        <div class = "page_card_text"><h3>Растительное молоко</h3><p>Лёгкий, нежный напиток с мягким вкусом и тонкой сладковатой ноткой. Кремовая текстура и приятный орехово-злаковый оттенок делают его идеальным дополнением к завтраку.</p></div>
+                        <div class = "page_card_row" id = "row-2">
+                            <div class = "page_card_price">100 ₽</div>
+                            <button class = "page_card_basket_button" product-index = "2">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card" id = "card-3">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/0b/db/06/0bdb061af839d05e5699a734c010a08b.jpg">
+                        <div class = "page_card_text"><h3>Чай травяной</h3><p>Ароматный, согревающий травяной чай с мягким, природным вкусом и тонким медово-цветочным оттенком. Янтарно-золотистый настой с легкой терпкостью и свежим послевкусием.</p></div>
+                        <div class = "page_card_row" id = "row-3">
+                            <div class = "page_card_price">270 ₽</div>
+                            <button class = "page_card_basket_button" product-index = "3">В корзину</button>
+                        </div>
+                    </div>
+                    <div class = "page_card" id = "card-4">
+                        <img class = "page_card_img" src = "https://i.pinimg.com/736x/3c/c9/60/3cc96099ee29fc132c7496b71e848970.jpg">
+                        <div class = "page_card_text"><h3>Чизкейк шоколадный</h3><p>Нежный, шелковистый шоколадный чизкейк с бархатистой текстурой и насыщенным вкусом темного какао. На тонкой песочной основе с легким сливочным ароматом.</p></div>
+                        <div class = "page_card_row" id = "row-4">
+                            <div class = "page_card_price">260 ₽</div>
+                            <button class = "page_card_basket_button" product-index = "4">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class = "page_img" src = "https://i.pinimg.com/736x/96/a4/ba/96a4ba0adf64deda449f51c5ca0e9d10.jpg">
+        </div>
+        <footer class = "basement">
+            <hr>
+            <div class = "basement_menu">
+                <button class = "menu_button">О нас</button>
+                <button class = "menu_button">Отзывы</button>
+                <button class = "menu_button">Контакты</button>
+                <button class = "menu_button">Вакансии</button>
+                <button class = "menu_button">Акции</button>
+            </div>
+            <div class = "row_divider">
+                <div class = "basement_data">
+                    <p>Часы работы: с 7:00 до 22:00</p>
+                    <p>2026 © Кафе «Kod zelenga zmaja»<button class = "basement_button_copyright">Правовая информация</button></p>
+                </div>
+                <div>
+                    <p>✆ +386 00-000-000</p>
+                    <p>✉ contact.kodzelengazmaja.si</p>
+                    <p>🏠︎ 1500 г. Любляна, ул. Драконья, 4</p>
+                </div>
+            </div>
+        </footer>
+    <div class = "login_background" id = "loginBackground">
+        <div class = "login_window">
+            <div class = "row_divider">
+                <h3>Войти в аккаунт:</h3>
+                <button class = "login_window_close" id = "loginClose">✕</button>
+            </div>
+            <p>Email:</p>
+            <input type = "email" placeholder = "example@mail.com">
+            <p>Пароль:</p>
+            <input type = "password" placeholder = "••••••">
+            <button class = "login_submit">Войти</button>
+        </div>
+    </div>
+    
+        <div class = "basket_window" id = "basketWindow">
+            <p class = "basket_empty" id = "basketEmpty">В корзине пусто</p>
+            <div class = "row_divider" id = "menuitem-0"></div>
+            <div class = "row_divider" id = "menuitem-1"></div>
+            <div class = "row_divider" id = "menuitem-2"></div>
+            <div class = "row_divider" id = "menuitem-3"></div>
+            <div class = "row_divider" id = "menuitem-4"></div>
+            <div class = "row_divider">
+                <button class = "basket_window_button purifier" id = "PurifierButton">Очистить корзину</button>
+                <button class = "basket_window_button">К оформлению</button>
+            </div>
+        </div>
+    <script src = "script.js"></script>
+    </body>
+</html>

@@ -69,7 +69,7 @@ function updateBasketWindow(index) {
     if (product.count > 0) {
         menuitem.innerHTML = `
             <p class = "basket_object">${product.name}, ${product.count} шт.</p>
-            <p class = "basket_object">${product.count*product.price} ₽</p>
+            <p class = "basket_price">${product.count*product.price} ₽</p>
         `;
     } else if (product.count === 0) {
         menuitem.innerHTML = `

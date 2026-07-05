@@ -52,39 +52,38 @@ button:active {
     justify-content: space-between;
 }
 .main_title {
-    margin: 40px 70px 10px;
+    margin: 30px 30px 10px;
     font-family: Georgia;
     color: #f0f0f0;
     letter-spacing: 3px;
-    font-size: clamp(32px, 3.5vw, 300px)
+    font-size: 45px;
 }
 .button_symbol.login {
-    margin: 60px 80px 40px;
+    margin: 38px 30px 30px;
     padding: 5px 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .head_description {
-    margin: 0px 70px 20px;
+    margin: 0px 30px 10px;
     max-width: 1100px;
-    font-size: 17px;
+    font-size: 16px;
 }
 .head_menu {
     display: flex;
     text-align: center;
-    margin: 10px 45px 10px;
+    margin: 10px 10px 10px;
 }
 .head_menu_search {
-    margin: 0px 20px;
+    margin: 0px 10px 0px 20px;
     font-size: 20px;
 }
 .menu_button {
     margin: 6px 10px;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 17px;
 }
 .button_symbol.head_basket_button {
-    margin: 0px 70px;
-    padding: 10px 18px;
+    margin: 0px 25px 0px 20px;
+    padding: 8px 13px;
     border-radius: 15px;
     background: #ac8c41;
     max-height: 50px;
@@ -116,8 +115,10 @@ button:active {
 .page {
     display: flex;
     text-align: center;
-    margin: 30px 80px;
-    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px 30px;
+    gap: 50px;
 }
 .page_recommended {
     display: block;
@@ -125,13 +126,14 @@ button:active {
 }
 .page_recommended_title {
     margin: 40px 0px 30px;
+    font-size: 22px;
 }
 .page_card_carousel {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    max-width: 620px;
+    max-width: 920px;
     height: 560px;
 }
 .page_card {
@@ -156,6 +158,7 @@ button:active {
 }
 .page_card_text {
     margin: 0px 15px 0px;
+    font-size: clamp(16px, 0.8vw, 100px);
 }
 .page_card_price {
     margin: 6px 20px;
@@ -180,18 +183,18 @@ button:active {
     height: 35px;
 }
 .page_img {
-    height: 700px;
-    width: auto;
+    width: 900px;
+    height: auto;
     border-radius: 15px;
 }
 .basement {
     background: #1a3c2a;
-    padding: 50px 100px;
+    padding: 50px 50px 40px;
 }
 .basement_menu {
     display: flex;
     text-align: center;
-    margin: 20px 10px 0px;
+    margin-top: 20px;
 }
 .basement_data {
     margin: 45px 0px 0px;
@@ -259,8 +262,8 @@ button:active {
     display: none;
     flex-wrap: wrap;
     position: absolute;
-    top: 300px;
-    right: 80px;
+    top: 260px;
+    right: 30px;
     z-index: 90;
     justify-content: left;
     align-items: right;
@@ -275,6 +278,9 @@ button:active {
 }
 .basket_object {
     width: 260px;
+}
+.basket_price {
+    width: 50px;
 }
 .basket_empty {
     display: block;
@@ -298,4 +304,61 @@ button:active {
 .purifier:hover {
     background: #e12a2a;
     color: #cccccc;
+}
+
+@media (min-width: 1500px) {
+    .main_title {
+        margin: 40px 70px 10px;
+        font-size: 55px;
+    }
+    .button_symbol.login {
+        margin: 60px 80px 40px;
+        font-size: 20px;
+    }
+    .head_description {
+        margin: 0px 70px 20px;
+        font-size: 16px;
+    }
+    .head_menu {
+        margin: 10px 45px 10px;
+    }
+    .head_menu_search {
+        margin: 0px 20px;
+    }
+    .menu_button {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .button_symbol.head_basket_button {
+        margin: 0px 70px;
+        padding: 10px 18px;
+        max-height: 50px;
+        font-size: 18px;
+    }
+    .page {
+        margin: 30px 80px;
+        gap: 100px;
+    }
+    .page_card_carousel {
+        max-width: 620px;
+        gap: 20px;
+    }
+    .page_recommended_title {
+        margin: 40px 0px 30px;
+        font-size: 20px;
+    }
+    .page_img {
+        height: 700px;
+        width: auto;
+    }
+    .basement {
+        padding: 50px 100px;
+    }
+    .basement_menu {
+        margin: 20px 10px 0px;
+    }
+    .basket_window {
+        top: 300px;
+        right: 80px;
+    }
 }

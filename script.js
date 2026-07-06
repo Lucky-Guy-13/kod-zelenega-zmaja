@@ -47,15 +47,16 @@ function updateBasket() {
     products_array.forEach(function(product) {
         total = total + (product.count*product.price);
     });
-    document.querySelector(".head_basket_button").innerHTML = `<img class = "symbol" src = "https://images.icon-icons.com/1796/PNG/512/shoppingbasket2_114884.png">|&emsp;${total} ₽`;
     let emptyBasket = document.getElementById("basketEmpty");
     let basketWindowButtons = document.querySelectorAll(".basket_window_button");
     if (total === 0) {
+        document.querySelector(".head_basket_button").innerHTML = `<img class = "symbol" src = "https://images.icon-icons.com/1796/PNG/512/shoppingbasket2_114884.png">|&emsp;${total} ₽`;
         emptyBasket.style.display = "block";
         for (let i = 0; i < basketWindowButtons.length; i++) {
             basketWindowButtons[i].style.display = "none";
         }
     } else {
+        document.querySelector(".head_basket_button").innerHTML = `<img class = "symbol" src = "https://images.icon-icons.com/1796/PNG/512/shoppingbasket2_114884.png">| ${total} ₽`;
         emptyBasket.style.display = "none";
         for (let i = 0; i < basketWindowButtons.length; i++) {
             basketWindowButtons[i].style.display = "block";
